@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/image_tip"
+            android:src="@drawable/elige_camino"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/title_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tip 1: Siempre empieza con una elección…"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="19sp"
+            android:text="El primer paso para vencer la procrastinación implica comprometerte con tus principios. Tienes que tomar una decisión sobre aquello en lo que quieres convertirte o hacer. Aunque todavía no tengas toda la información, conocimientos, habilidades, capital o tiempo para hacer que suceda, sigues teniendo que tomar una decisión de antemano. Sea cual sea el camino que tomes, debes prometerte que harás todo el trabajo duro y darás toda la determinación necesaria para conseguirlo. De lo contrario, será muy fácil cambiar tu opinión tan pronto como encuentres un obstáculo o un problema en el camino." />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_tip_end"
+        android:drawableTop="@color/lightPrimaryColor"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="“Quizás” y “no estoy seguro” son signos de advertencia de procrastinación, así que ¡cuidado!" />
+
+    <HorizontalScrollView
+
+        android:background="@color/lightPrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:src="@drawable/coaching_ejecutivo"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <ImageButton
+                android:id="@+id/bt_choose"
+                android:onClick="tip_choose"
+                android:src="@drawable/elige_camino"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <ImageButton
+                android:id="@+id/bt_actitude"
+                android:onClick="tip_actitude"
+                android:src="@drawable/actitud"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <ImageButton
+                android:src="@drawable/plan"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <ImageButton
+                android:src="@drawable/sentido_urgencia"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <ImageButton
+                android:src="@drawable/actua"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
