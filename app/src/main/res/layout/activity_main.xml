@@ -1,63 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<RelativeLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@color/lightPrimaryColor"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
 
-    <RelativeLayout
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/image_tip"
-            android:src="@drawable/elige_camino"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            />
-
-        <TextView
-            android:id="@+id/title_tip"
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Tip 1: Siempre empieza con una elección…"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"/>
-    </RelativeLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/text_tip"
-            android:gravity="center_horizontal"
+            <ImageView
+                android:id="@+id/image_tip"
+                android:src="@drawable/img_ini"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:background="@color/lightPrimaryColor"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:textSize="19sp"
-            android:text="El primer paso para vencer la procrastinación implica comprometerte con tus principios. Tienes que tomar una decisión sobre aquello en lo que quieres convertirte o hacer. Aunque todavía no tengas toda la información, conocimientos, habilidades, capital o tiempo para hacer que suceda, sigues teniendo que tomar una decisión de antemano. Sea cual sea el camino que tomes, debes prometerte que harás todo el trabajo duro y darás toda la determinación necesaria para conseguirlo. De lo contrario, será muy fácil cambiar tu opinión tan pronto como encuentres un obstáculo o un problema en el camino." />
+            android:layout_height="253dp">
 
-    </ScrollView>
+            <TextView
+                android:id="@+id/text_tip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/text_ini" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/text_tip_end"
-        android:drawableTop="@color/lightPrimaryColor"
-        android:gravity="center"
+        android:id="@+id/title_tip"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/title_ini"
+        android:textSize="30sp"
+        android:textAlignment="center"
         android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="“Quizás” y “no estoy seguro” son signos de advertencia de procrastinación, así que ¡cuidado!" />
+        android:textColor="@android:color/black"/>
 
     <HorizontalScrollView
-
-        android:background="@color/lightPrimaryColor"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -67,36 +82,44 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:src="@drawable/coaching_ejecutivo"
+                android:id="@+id/bt_ini"
+                android:onClick="init"
+                android:src="@drawable/img_ini"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
             <ImageButton
                 android:id="@+id/bt_choose"
-                android:onClick="tip_choose"
-                android:src="@drawable/elige_camino"
+                android:onClick="tip_1_choose"
+                android:src="@drawable/img_tip1"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
             <ImageButton
                 android:id="@+id/bt_actitude"
-                android:onClick="tip_actitude"
-                android:src="@drawable/actitud"
+                android:onClick="tip_2_actitude"
+                android:src="@drawable/img_tip2"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
             <ImageButton
-                android:src="@drawable/plan"
+                android:id="@+id/bt_plan"
+                android:onClick="tip_3_plan"
+                android:src="@drawable/img_tip3"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
             <ImageButton
-                android:src="@drawable/sentido_urgencia"
+                android:id="@+id/bt_urgency"
+                android:onClick="tip_4_urgency"
+                android:src="@drawable/img_tip4"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
             <ImageButton
-                android:src="@drawable/actua"
+                android:id="@+id/bt_action"
+                android:onClick="tip_5_action"
+                android:src="@drawable/img_tip5"
                 android:scaleType="centerCrop"
                 android:layout_width="80dp"
                 android:layout_height="90dp" />
@@ -104,4 +127,4 @@
 
     </HorizontalScrollView>
 
-</LinearLayout>
+</RelativeLayout>

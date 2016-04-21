@@ -1,3 +1,22 @@
 <resources>
+    <!--title bar-->
     <string name="app_name">Vence tu actitud de procrastinar</string>
+
+    <!--title tips-->
+    <string name="title_ini">5 tips para vencer tu actitud de procrastinar</string>
+    <string name="title_tip_1">Tip 1: Siempre empieza con una elección…</string>
+    <string name="title_tip_2">Tip 2: Tu actitud es importante. ¡Hazte cargo de ella!</string>
+    <string name="title_tip_3">Tip 3: Necesitas tener un plan, no importa lo básico que sea…</string>
+    <string name="title_tip_4">Tip 4: Crea un sentido de urgencia</string>
+    <string name="title_tip_5">Tip 5: ¡Actúa!</string>
+
+    <!--strings for paragraph-->
+    <string name="text_ini">¿Te distraes cuando trabajas en algo importante para hacer algo más trivial? Procrastinar significa posponer la tarea que estás realizando para realizar otra actividad secundaria que te distraiga de la principal. Procrastinar tiene que ver con una falta de motivación o con relacionar la tarea que estamos realizando con posibles consecuencias negativas. Si estás sumergido en una tarea que no disfrutas, tu mente necesita dejarla a un lado para respirar y hacer algo que te resulte más placentero.
+    </string>
+    <string name="text_tip_1">El primer paso para vencer la procrastinación implica comprometerte con tus principios. Tienes que tomar una decisión sobre aquello en lo que quieres convertirte o hacer. Aunque todavía no tengas toda la información, conocimientos, habilidades, capital o tiempo para hacer que suceda, sigues teniendo que tomar una decisión de antemano. Sea cual sea el camino que tomes, debes prometerte que harás todo el trabajo duro y darás toda la determinación necesaria para conseguirlo. De lo contrario, será muy fácil cambiar tu opinión tan pronto como encuentres un obstáculo o un problema en el camino.</string>
+    <string name="text_tip_2">Una actitud positiva es ABSOLUTAMENTE importante si quieres derrotar los poderosos efectos de la procrastinación. No importa cómo sople el viento, debes hacerte cargo de tu vida, tus sueños y tus decisiones. La mayor desventaja de no tomar responsabilidades en tu vida es que acabarás culpando a los demás Una persona que se hace cargo de adoptar una actitud positiva ante la vida se centrará más en encontrar una solución a sus retos o problemas.</string>
+    <string name="text_tip_3">Tu plan no necesita ser perfecto. Puede cambiar según adquieres más información y tu sueño se hace más claro. Cuanta más información vayas obteniendo, tendrás las herramientas necesarias para actualizar tu plan. Aún más importante: escribe tu plan. Hay algo muy poderoso y diferente en escribir  con palabras tu plan. Cuando lo haces, deja de ser una idea vaga que sólo existe en tu cabeza para transformarse en algo real.  A su vez es una buena práctica revisar tu plan cada cierto tiempo. Esta simple práctica te ayudará a actualizar tu plan tan pronto como te sea posible y te mantendrá focalizado en tu meta.</string>
+    <string name="text_tip_4">La procrastinación es tan poderosa es que nos seduce para creer que “no hay ninguna prisa, siempre habrá tiempo”. Al creer en esta mentira, nos robamos de forma muy inteligente nuestro tiempo y nuestras vidas. Toda persona exitosa sabe que el mejor momento para empezar a hacer algo es ¡AHORA! Así que pon una pistola en tu cabeza (¡imaginaria por supuesto!) para crear urgencia en tu vida, y establecer fechas límites estrictas y firmes para ti mismo. Evita la tentación de dejar para mañana lo que puedes hacer hoy.</string>
+    <string name="text_tip_5">Después de tomar una decisión, adoptar la actitud correcta, crear un plan básico y establecer estrictas fechas límites para ti, nada pasará ni nada cambiará hasta que tú no actúes. Cada día, debes realizar algo (no importa lo pequeño que sea) que te acerque más a tus sueños. Los pequeños pasos y esfuerzos que hacemos cada día pueden parecer no importar, pero importan. Al tomar acciones consistentes y positivas en la dirección de nuestros sueños, lograremos alcanzar las metas que nos hemos propuesto. “LA ACCIÓN ES LA MEDICINA MÁS POTENTE EN EL MUNDO PARA VENCER LA PROCRASTINACIÓN”</string>
+
 </resources>

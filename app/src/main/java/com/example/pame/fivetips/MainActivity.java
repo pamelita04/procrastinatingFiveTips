@@ -9,9 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageTip;
-    TextView textTip;
-    TextView textTipEnd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,22 +16,84 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void tip_choose(View view) {
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void init(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
         ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
-        imageTip.setImageResource(R.drawable.elige_camino);
         TextView textTip = (TextView) findViewById(R.id.text_tip);
-        TextView textTipEnd = (TextView) findViewById(R.id.text_tip_end);
 
-        textTip.setText("El primer paso para vencer la procrastinación implica comprometerte con tus principios. Tienes que tomar una decisión sobre aquello en lo que quieres convertirte o hacer. Aunque todavía no tengas toda la información, conocimientos, habilidades, capital o tiempo para hacer que suceda, sigues teniendo que tomar una decisión de antemano. Sea cual sea el camino que tomes, debes prometerte que harás todo el trabajo duro y darás toda la determinación necesaria para conseguirlo. De lo contrario, será muy fácil cambiar tu opinión tan pronto como encuentres un obstáculo o un problema en el camino.");
-        textTipEnd.setText("“Quizás” y “no estoy seguro” son signos de advertencia de procrastinación, así que ¡cuidado!");
+        titleTip.setText(R.string.title_ini);
+        imageTip.setImageResource(R.drawable.img_ini);
+        textTip.setText(R.string.text_ini);
     }
 
-    public void tip_actitude(View view) {
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void tip_1_choose(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
         ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
-        imageTip.setImageResource(R.drawable.actitud);
         TextView textTip = (TextView) findViewById(R.id.text_tip);
-        TextView textTipEnd = (TextView) findViewById(R.id.text_tip_end);
-        textTip.setText("Muchas personas no han tenido responsabilidades en sus vidas. Puede que hayan tomado una decisión, pero terminan culpando a otros por sus sueños no realizadosm");
-        textTipEnd.setText("No importa cómo sople el viento, debes hacerte cargo de tu vida, tus sueños y tus decisiones.");
+
+        titleTip.setText(R.string.title_tip_1);
+        imageTip.setImageResource(R.drawable.img_tip1);
+        textTip.setText(R.string.text_tip_1);
+
+
     }
+
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void tip_2_actitude(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
+        ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
+        TextView textTip = (TextView) findViewById(R.id.text_tip);
+
+        titleTip.setText(R.string.title_tip_2);
+        imageTip.setImageResource(R.drawable.img_tip2);
+        textTip.setText(R.string.text_tip_2);
+    }
+
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void tip_3_plan(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
+        ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
+        TextView textTip = (TextView) findViewById(R.id.text_tip);
+
+        titleTip.setText(R.string.title_tip_3);
+        imageTip.setImageResource(R.drawable.img_tip3);
+        textTip.setText(R.string.text_tip_3);
+    }
+
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void tip_4_urgency(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
+        ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
+        TextView textTip = (TextView) findViewById(R.id.text_tip);
+
+        titleTip.setText(R.string.title_tip_4);
+        imageTip.setImageResource(R.drawable.img_tip4);
+        textTip.setText(R.string.text_tip_4);
+    }
+
+    /**
+     * This method displays an image, title of the tip and its respective explanation
+     * */
+    public void tip_5_action(View view) {
+        TextView titleTip = (TextView) findViewById(R.id.title_tip);
+        ImageView imageTip= (ImageView) findViewById(R.id.image_tip);
+        TextView textTip = (TextView) findViewById(R.id.text_tip);
+
+        titleTip.setText(R.string.title_tip_5);
+        imageTip.setImageResource(R.drawable.img_tip5);
+        textTip.setText(R.string.text_tip_5);
+    }
+
 }
